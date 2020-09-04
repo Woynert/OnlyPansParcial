@@ -14,12 +14,12 @@
         <Label Content="Info" HorizontalAlignment="Left" Margin="457,72,0,0" VerticalAlignment="Top"/>
         <Label Content="Producto Vendido" HorizontalAlignment="Left" Margin="457,111,0,0" VerticalAlignment="Top"/>
         <Label Content="Total" HorizontalAlignment="Left" Margin="457,235,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.496,1.44"/>
-        <Label Content="2000$" HorizontalAlignment="Left" Margin="515,235,0,0" VerticalAlignment="Top"/>
-        <Label Content="Pan Alineado" HorizontalAlignment="Left" Margin="555,142,0,0" VerticalAlignment="Top"/>
-        <Label Content="1000$" HorizontalAlignment="Left" Margin="555,173,0,0" VerticalAlignment="Top"/>
-        <Label Content="x3" HorizontalAlignment="Left" Margin="555,199,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.325,0.466"/>
+        <Label x:Name="lblTotal" Content="2000$" HorizontalAlignment="Left" Margin="515,235,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblProducto" Content="Pan Alineado" HorizontalAlignment="Left" Margin="555,142,0,0" VerticalAlignment="Top" MouseLeftButtonDown="lblProducto_MouseLeftButtonDown"/>
+        <Label x:Name="lblPrecio" Content="1000$" HorizontalAlignment="Left" Margin="555,173,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCantidad" Content="x3" HorizontalAlignment="Left" Margin="555,199,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.325,0.466"/>
         <Label Content="Vendido por" HorizontalAlignment="Left" Margin="457,304,0,0" VerticalAlignment="Top"/>
-        <Label Content="Lorem Ipsum" HorizontalAlignment="Left" Margin="555,328,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblNombreEmpleado" Content="Lorem Ipsum" HorizontalAlignment="Left" Margin="555,328,0,0" VerticalAlignment="Top"/>
         <Label Content="Empleado" HorizontalAlignment="Left" Margin="555,354,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.139,-0.391"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="76" Margin="457,142,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="76" Margin="457,330,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>

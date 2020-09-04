@@ -24,14 +24,14 @@ namespace OnlyPans
     public partial class MainWindow : Window
     {
         //Productos
-        Object[,] Producto = new Object[10, 2];
+        public Object[,] Producto = new Object[10, 2];
         /*
         0 -> nombre
         1 -> precio
         */
 
         //Empleados
-        Object[,] Empleado = new Object[10, 6];
+        public Object[,] Empleado = new Object[10, 6];
         /*
         0 -> nombre
         1 -> cedula
@@ -42,7 +42,7 @@ namespace OnlyPans
         */
 
         //Ventas
-        int[,] Venta = new int[10, 4];
+        public int[,] Venta = new int[10, 4];
         /*
         0 -> id producto
         1 -> Cantidad
@@ -50,14 +50,19 @@ namespace OnlyPans
         3 -> id empleado que lo vendió
         */
 
+        public int NProductos = 0;
+        public int NEmpleados = 0;
+        public int NVentas = 0;
+
         public MainWindow()
         {
             InitializeComponent();
             //Application.Current.MainWindow.Height = 100;
-            MainFrame.Content = new Page2();
+            MainFrame.Content = new Page3();
 
             //variables de prueba
             //productos
+            NProductos = 3;
             Producto[0, 0] = "Pan Alineado";
             Producto[0, 1] = 1000;
             Producto[1, 0] = "Pan No Alineado";
@@ -66,6 +71,7 @@ namespace OnlyPans
             Producto[2, 1] = 2000;
 
             //empleados
+            NEmpleados = 2;
             Empleado[0, 0] = "Lorem";
             Empleado[0, 1] = 017405727;
             Empleado[0, 2] = 10;
@@ -81,12 +87,11 @@ namespace OnlyPans
             Empleado[1, 5] = "buenasDamas";
 
             //Ventas
+            NVentas = 1;
             Venta[0, 0] = 1;
             Venta[0, 1] = 2;
             Venta[0, 2] = 2000;
             Venta[0, 3] = 1;
-
-
 
         }
     }

@@ -23,11 +23,13 @@ namespace OnlyPans
         public Page2()
         {
             InitializeComponent();
+
+
         }
 
         private void lblProducto_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-
+            //Enviar a la pagina de información del producto
         }
     }
 }
