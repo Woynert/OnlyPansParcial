@@ -24,14 +24,14 @@ namespace OnlyPans
     public partial class MainWindow : Window
     {
         //Productos
-        public Object[,] Producto = new Object[10, 2];
+        public Object[,] Producto = new Object[100, 2];
         /*
         0 -> nombre
         1 -> precio
         */
 
         //Empleados
-        public Object[,] Empleado = new Object[10, 7];
+        public Object[,] Empleado = new Object[100, 7];
         /*
         0 -> nombre
         1 -> cedula
@@ -43,7 +43,7 @@ namespace OnlyPans
         */
 
         //Ventas
-        public Object[,] Venta = new Object[10, 7];
+        public Object[,] Venta = new Object[100, 7];
         /*
         0 -> id producto
         1 -> Cantidad
@@ -66,7 +66,8 @@ namespace OnlyPans
         public Page5 P5 = new Page5();
         public Page6 P6 = new Page6();
 
-        public bool ADMIN = false; 
+        public bool ADMIN = false;
+        public int ID = 0;
 
         public MainWindow()
         {
@@ -112,12 +113,12 @@ namespace OnlyPans
             //Ventas
             NVentas = 1;
             Venta[0, 0] = 1;
-            Venta[0, 1] = 2;
+            Venta[0, 1] = 4;
             Venta[0, 2] = 2000;
             Venta[0, 3] = 1;
             Venta[0, 4] = "Mario";
             Venta[0, 5] = "102143254";
-            Venta[0, 6] = "02-03-2002 24:02";
+            Venta[0, 6] = "02/03/2020 23:02 p.m.";
 
         }
 

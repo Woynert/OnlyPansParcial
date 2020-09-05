@@ -46,9 +46,10 @@ namespace OnlyPans
                     {
                         w.lblEmpleados.Visibility = Visibility.Hidden;
                     }
-                    w.MainFrame.Content = w.P2;
+                    
 
                     txtUser.Text = "";
+                    w.ID = i;
 
                     w.lblAdmin.Visibility = Visibility.Visible;
                     w.lblResumen.Visibility = Visibility.Visible;
@@ -56,9 +57,11 @@ namespace OnlyPans
                     w.lblCerrar.Visibility = Visibility.Visible;
 
                     si = true;
+
+                    w.MainFrame.Content = w.P2;
                 }
             }
-            if (si = false)
+            if (si == false)
             {
                 MessageBox.Show("Credenciales Incorrectas");
             }

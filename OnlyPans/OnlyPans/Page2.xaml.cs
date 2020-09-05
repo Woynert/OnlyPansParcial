@@ -36,7 +36,7 @@ namespace OnlyPans
             MainWindow w = (MainWindow)Window.GetWindow(this);
             if (w.ADMIN)
             {
-                btnNuevaVenta.Visibility = Visibility.Hidden;
+                btnNuevaVenta.Visibility = Visibility.Visible;
             }
             else
             {
@@ -68,6 +68,7 @@ namespace OnlyPans
                 lblProducto.Content = w.Producto[Int32.Parse(w.Venta[_id, 0].ToString()), 0];
                 lblPrecio.Content = w.Producto[Int32.Parse(w.Venta[_id, 0].ToString()), 1];
                 lblCantidad.Content = w.Venta[_id, 1].ToString();
+                lblTotal.Content = w.Venta[_id, 2].ToString();
                 lblFecha.Content = w.Venta[_id, 6];
                 lblNombreEmpleado.Content = w.Empleado[Int32.Parse(w.Venta[_id, 3].ToString()), 0];
                 lblNombreCliente.Content = w.Venta[_id, 4];

@@ -57,10 +57,12 @@ namespace OnlyPans
             w.Venta[w.NVentas, 0] = cbxSexo.SelectedIndex;
             w.Venta[w.NVentas, 1] = sldEdad.Value;
             w.Venta[w.NVentas, 2] = (Int32.Parse(w.Producto[cbxSexo.SelectedIndex, 1].ToString()) * sldEdad.Value);
-            w.Venta[w.NVentas, 3] = 0; //ARREGLAR
+            w.Venta[w.NVentas, 3] = w.ID; //ARREGLAR
             w.Venta[w.NVentas, 4] = txtNombre.Text;
             w.Venta[w.NVentas, 5] = txtCedula.Text;
             w.Venta[w.NVentas, 6] = DateTime.Now.ToString("MM/dd/yyyy h:mm tt");
+
+            //MessageBox.Show(w.Venta[w.NVentas, 2].ToString());
             w.NVentas = w.NVentas + 1;
 
             w.MainFrame.Content = w.P2;
@@ -73,9 +75,11 @@ namespace OnlyPans
 
         private void UpdatePrice()
         {
-            MainWindow w = (MainWindow)Window.GetWindow(this);
-            lblEdad.Content = sldEdad.Value;
-            lblValor.Content = (Int32.Parse(w.Producto[cbxSexo.SelectedIndex, 1].ToString()) * sldEdad.Value).ToString() + "$";
+            if (cbxSexo.SelectedIndex >= 0){ 
+                MainWindow w = (MainWindow)Window.GetWindow(this);
+                lblEdad.Content = sldEdad.Value;
+                lblValor.Content = (Int32.Parse(w.Producto[cbxSexo.SelectedIndex, 1].ToString()) * sldEdad.Value).ToString() + "$";
+            }
         }
 
         private void cbxSexo_SelectionChanged(object sender, SelectionChangedEventArgs e)
