@@ -48,8 +48,9 @@ namespace OnlyPans
             w.Empleado[w.NEmpleados, 3] = cbxSexo.SelectedItem;
             w.Empleado[w.NEmpleados, 4] = txtEmail.Text;
             w.Empleado[w.NEmpleados, 5] = txtPass.Password;
-            w.Empleado[w.NEmpleados, 6] = cbxAdmin.Content;
+            w.Empleado[w.NEmpleados, 6] = cbxAdmin.IsChecked;
 
+            //MessageBox.Show(cbxAdmin.IsChecked.ToString());
             txtNombre.Text = "";
             txtCedula.Text = "";
             sldEdad.Value = 0;
