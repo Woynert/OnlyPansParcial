@@ -48,6 +48,7 @@ namespace OnlyPans
             w.Empleado[w.NEmpleados, 3] = cbxSexo.SelectedItem;
             w.Empleado[w.NEmpleados, 4] = txtEmail.Text;
             w.Empleado[w.NEmpleados, 5] = txtPass.Password;
+            w.Empleado[w.NEmpleados, 6] = cbxAdmin.Content;
 
             txtNombre.Text = "";
             txtCedula.Text = "";
@@ -55,9 +56,15 @@ namespace OnlyPans
             cbxSexo.SelectedIndex = 0;
             txtEmail.Text = "";
             txtPass.Password = "";
+            cbxAdmin.Content = false;
 
             w.NEmpleados = w.NEmpleados+1;
             w.MainFrame.Content = w.P4;
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -30,7 +30,24 @@ namespace OnlyPans
             MainWindow w = (MainWindow)Window.GetWindow(this);
             for (int i = 0; i < w.NEmpleados; i++)
             {
-                if txt
+                if ((txtUser.Text == w.Empleado[i, 4].ToString() || txtUser.Text == w.Empleado[i, 0].ToString()) && (txtPass.Password == w.Empleado[i, 5].ToString()))
+                {
+                    //MessageBox.Show((w.Empleado[i, 6]).ToString());
+
+                    w.lblAdmin.Content = w.Empleado[i, 0].ToString() + " - Empleado";
+                    if (Convert.ToBoolean(w.Empleado[i, 6]) == true)
+                    {
+                        w.ADMIN = true;
+                        w.lblAdmin.Content = w.Empleado[i, 0].ToString() + " - Administrador";
+                    }
+                    else
+                    {
+                        w.lblEmpleados.Visibility = Visibility.Hidden;
+                    }
+                    w.MainFrame.Content = w.P4;
+
+                    w.lblAdmin.Visibility = Visibility.Visible;
+                }
             }
         }
     }

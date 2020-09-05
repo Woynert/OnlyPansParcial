@@ -31,7 +31,7 @@ namespace OnlyPans
         */
 
         //Empleados
-        public Object[,] Empleado = new Object[10, 6];
+        public Object[,] Empleado = new Object[10, 7];
         /*
         0 -> nombre
         1 -> cedula
@@ -39,6 +39,7 @@ namespace OnlyPans
         3 -> Sexo
         4 -> Email
         5 -> Contraseña
+        6 -> Admin
         */
 
         //Ventas
@@ -65,11 +66,16 @@ namespace OnlyPans
         public Page5 P5 = new Page5();
         public Page6 P6 = new Page6();
 
+        public bool ADMIN = false; 
+
         public MainWindow()
         {
             InitializeComponent();
             //Application.Current.MainWindow.Height = 100;
-            MainFrame.Content = P4;
+
+            lblAdmin.Visibility = Visibility.Hidden;
+
+            MainFrame.Content = P1;
 
             //variables de prueba
             //productos
@@ -89,6 +95,7 @@ namespace OnlyPans
             Empleado[0, 3] = "Hombre";
             Empleado[0, 4] = "1@hey.com";
             Empleado[0, 5] = "123";
+            Empleado[0, 6] = true;
 
             Empleado[1, 0] = "Ipsum";
             Empleado[1, 1] = "2572570";
@@ -96,6 +103,7 @@ namespace OnlyPans
             Empleado[1, 3] = "Mujer";
             Empleado[1, 4] = "2@hey.com";
             Empleado[1, 5] = "1234";
+            Empleado[1, 6] = false;
 
             //Ventas
             NVentas = 1;
@@ -125,6 +133,11 @@ namespace OnlyPans
         private void Label_MouseLeftButtonDown_2(object sender, MouseButtonEventArgs e)
         {
             MainFrame.Content = P3;
+        }
+
+        private void MainFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
         }
     }
 }
