@@ -24,5 +24,14 @@ namespace OnlyPans
         {
             InitializeComponent();
         }
+
+        private void btnIngresar_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow w = (MainWindow)Window.GetWindow(this);
+            for (int i = 0; i < w.NEmpleados; i++)
+            {
+                if txt
+            }
+        }
     }
 }

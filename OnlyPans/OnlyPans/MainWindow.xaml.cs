@@ -42,12 +42,15 @@ namespace OnlyPans
         */
 
         //Ventas
-        public int[,] Venta = new int[10, 4];
+        public Object[,] Venta = new Object[10, 7];
         /*
         0 -> id producto
         1 -> Cantidad
         2 -> Total
         3 -> id empleado que lo vendió
+        4 -> Nombre comprador
+        5 -> Cedula comprador
+        6 -> Fecha
         */
 
         public int NProductos = 0;
@@ -60,6 +63,7 @@ namespace OnlyPans
         public Page3 P3 = new Page3();
         public Page4 P4 = new Page4();
         public Page5 P5 = new Page5();
+        public Page6 P6 = new Page6();
 
         public MainWindow()
         {
@@ -83,15 +87,15 @@ namespace OnlyPans
             Empleado[0, 1] = "017405727";
             Empleado[0, 2] = 10;
             Empleado[0, 3] = "Hombre";
-            Empleado[0, 4] = "www@hey.com";
-            Empleado[0, 5] = "buenasCaballeros";
+            Empleado[0, 4] = "1@hey.com";
+            Empleado[0, 5] = "123";
 
             Empleado[1, 0] = "Ipsum";
             Empleado[1, 1] = "2572570";
             Empleado[1, 2] = 20;
             Empleado[1, 3] = "Mujer";
-            Empleado[1, 4] = "www@Oh.com";
-            Empleado[1, 5] = "buenasDamas";
+            Empleado[1, 4] = "2@hey.com";
+            Empleado[1, 5] = "1234";
 
             //Ventas
             NVentas = 1;
@@ -99,6 +103,9 @@ namespace OnlyPans
             Venta[0, 1] = 2;
             Venta[0, 2] = 2000;
             Venta[0, 3] = 1;
+            Venta[0, 4] = "Mario";
+            Venta[0, 5] = "102143254";
+            Venta[0, 6] = "02-03-2002 24:02";
 
         }
 
