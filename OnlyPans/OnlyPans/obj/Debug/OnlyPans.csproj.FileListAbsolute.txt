@@ -19,3 +19,7 @@ C:\Users\Woynert\Documents\GitHub\OnlyPans\OnlyPansParcial\OnlyPans\OnlyPans\obj
 C:\Users\Woynert\Documents\GitHub\OnlyPans\OnlyPansParcial\OnlyPans\OnlyPans\obj\Debug\Page2.baml
 C:\Users\Woynert\Documents\GitHub\OnlyPans\OnlyPansParcial\OnlyPans\OnlyPans\obj\Debug\Page3.g.cs
 C:\Users\Woynert\Documents\GitHub\OnlyPans\OnlyPansParcial\OnlyPans\OnlyPans\obj\Debug\Page3.baml
+C:\Users\Woynert\Documents\GitHub\OnlyPans\OnlyPansParcial\OnlyPans\OnlyPans\obj\Debug\Page4.g.cs
+C:\Users\Woynert\Documents\GitHub\OnlyPans\OnlyPansParcial\OnlyPans\OnlyPans\obj\Debug\Page4.baml
+C:\Users\Woynert\Documents\GitHub\OnlyPans\OnlyPansParcial\OnlyPans\OnlyPans\obj\Debug\Page5.g.cs
+C:\Users\Woynert\Documents\GitHub\OnlyPans\OnlyPansParcial\OnlyPans\OnlyPans\obj\Debug\Page5.baml

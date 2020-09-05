@@ -20,20 +20,29 @@ namespace OnlyPans
     /// </summary>
     public partial class Page3 : Page
     {
-        
+        bool Iniciado = false;
         public Page3()
         {
             InitializeComponent();
+            
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            ShowContent(); //MessageBox.Show("Loaded");
+            if (!Iniciado) { 
+                ShowContent(); //MessageBox.Show("Loaded");
+                Iniciado = true;
+            }
         }
 
         private void lbxProductos_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+
+            MainWindow w = (MainWindow)Window.GetWindow(this);
             //Mostrar contenido
+            lblProducto.Content = w.Producto[Int16.Parse((lbxProductos.SelectedIndex.ToString())), 0];
+            lblPrecio.Content = w.Producto[Int16.Parse((lbxProductos.SelectedIndex.ToString())), 1] + "$";
+
         }
 
         private void ShowContent()
@@ -43,6 +52,7 @@ namespace OnlyPans
             for (int i = 0; i <= w.NProductos; i++)
             {
                 lbxProductos.Items.Add(w.Producto[i, 0]);
+                lbxProductosId.Items.Add(i);
             }
         }
     }

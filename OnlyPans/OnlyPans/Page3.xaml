@@ -11,16 +11,16 @@
 
     <Grid Background="White">
         <Grid.RowDefinitions>
-            <RowDefinition Height="59*"/>
-            <RowDefinition Height="166*"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label Content="Productos" HorizontalAlignment="Left" Margin="19,72,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="lbxProductos" HorizontalAlignment="Left" Height="319" Margin="19,98,0,0" VerticalAlignment="Top" Width="335" Grid.RowSpan="2" SelectionChanged="lbxProductos_SelectionChanged"/>
+        <Label Content="Productos" HorizontalAlignment="Left" Margin="48,80,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lbxProductos" HorizontalAlignment="Left" Height="280" Margin="48,106,0,0" VerticalAlignment="Top" Width="335" SelectionChanged="lbxProductos_SelectionChanged"/>
         <Label Content="Info" HorizontalAlignment="Left" Margin="457,72,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblProducto" Content="Pan Alineado" HorizontalAlignment="Left" Margin="532,110,0,0" VerticalAlignment="Top" Grid.RowSpan="2"/>
-        <Label x:Name="lblPrecio" Content="1000$" HorizontalAlignment="Left" Margin="532,24.121,0,0" VerticalAlignment="Top" Grid.Row="1"/>
-        <Label Content="Nombre" HorizontalAlignment="Left" Margin="458,111,0,0" VerticalAlignment="Top" Grid.RowSpan="2"/>
-        <Label Content="Precio" HorizontalAlignment="Left" Margin="458,24.121,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label x:Name="lblProducto" Content="Pan Alineado" HorizontalAlignment="Left" Margin="532,110,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPrecio" Content="1000$" HorizontalAlignment="Left" Margin="532,156,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.476,1.447"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="458,111,0,0" VerticalAlignment="Top"/>
+        <Label Content="Precio" HorizontalAlignment="Left" Margin="458,156,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lbxProductosId" HorizontalAlignment="Left" Height="319" Margin="-112,98,0,0" VerticalAlignment="Top" Width="75" SelectionChanged="lbxProductos_SelectionChanged"/>
 
     </Grid>
 </Page>

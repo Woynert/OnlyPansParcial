@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OnlyPans"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="745" Width="800">
     <Grid Background="#FFE8E8E8">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="55*"/>
             <ColumnDefinition Width="21*"/>
             <ColumnDefinition Width="320*"/>
         </Grid.ColumnDefinitions>
-        <Frame Name="MainFrame"  x:FieldModifier="public" HorizontalAlignment="Left" Height="362" VerticalAlignment="Top" Width="792" Margin="0,58,0,0" Background="White" Grid.ColumnSpan="3"/>
-        <Label Content="Resumen" HorizontalAlignment="Left" Margin="2,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.923" Grid.ColumnSpan="2" Grid.Column="1"/>
-        <Label Content="Empleados" HorizontalAlignment="Left" Margin="70,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.923" Grid.Column="2"/>
-        <Label Content="Inventario" HorizontalAlignment="Left" Margin="184,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.923" Grid.Column="2"/>
+        <Frame Name="MainFrame"  x:FieldModifier="public" HorizontalAlignment="Left" Height="657" VerticalAlignment="Top" Width="792" Margin="0,58,0,0" Background="White" Grid.ColumnSpan="3"/>
+        <Label Content="Resumen" HorizontalAlignment="Left" Margin="2,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.923" Grid.ColumnSpan="2" Grid.Column="1" MouseLeftButtonDown="Label_MouseLeftButtonDown"/>
+        <Label Content="Empleados" HorizontalAlignment="Left" Margin="70,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.923" Grid.Column="2" MouseLeftButtonDown="Label_MouseLeftButtonDown_1"/>
+        <Label Content="Inventario" HorizontalAlignment="Left" Margin="184,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.923" Grid.Column="2" MouseLeftButtonDown="Label_MouseLeftButtonDown_2"/>
 
     </Grid>
 </Window>
