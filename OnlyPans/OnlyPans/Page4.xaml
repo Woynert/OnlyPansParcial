@@ -10,18 +10,17 @@
       Loaded="Window_Loaded">
 
     <Grid Background="White">
-        <Label Content="Empleados" HorizontalAlignment="Left" Margin="61,77,0,0" VerticalAlignment="Top"/>
+        <Label Content="Empleados" HorizontalAlignment="Left" Margin="61,64,0,0" VerticalAlignment="Top" FontSize="18"/>
         <ListBox x:Name="lbxEmpleados" HorizontalAlignment="Left" Height="280" Margin="61,103,0,0" VerticalAlignment="Top" Width="335" SelectionChanged="lbxEmpleados_SelectionChanged"/>
-        <Label Content="Info" HorizontalAlignment="Left" Margin="470,69,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblNombre" Content="Pan Alineado" HorizontalAlignment="Left" Margin="545,107,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblCedula" Content="165020" HorizontalAlignment="Left" Margin="545,139,0,0" VerticalAlignment="Top"/>
-        <Label Content="Nombre" HorizontalAlignment="Left" Margin="471,108,0,0" VerticalAlignment="Top"/>
+        <Label Content="Información" HorizontalAlignment="Left" Margin="471,64,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="lblNombre" Content="Pan Alineado" HorizontalAlignment="Left" Margin="533,107,0,0" VerticalAlignment="Top" Background="#FFF0F0F0" Width="193"/>
+        <Label x:Name="lblCedula" Content="165020" HorizontalAlignment="Left" Margin="533,139,0,0" VerticalAlignment="Top" Background="#FFF0F0F0" Width="193"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="471,107,0,0" VerticalAlignment="Top"/>
         <Label Content="Cedula" HorizontalAlignment="Left" Margin="471,139,0,0" VerticalAlignment="Top"/>
-        <Label Content="Edad" HorizontalAlignment="Left" Margin="471,165,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblEdad" Content="12" HorizontalAlignment="Left" Margin="545,165,0,0" VerticalAlignment="Top"/>
-        <Label Content="Sexo" HorizontalAlignment="Left" Margin="471,191,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblSexo" Content="Hombre" HorizontalAlignment="Left" Margin="545,191,0,0" VerticalAlignment="Top"/>
-        <Label Content="Editar" HorizontalAlignment="Left" Margin="471,287,0,0" VerticalAlignment="Top" Background="White" Foreground="#FF00C5FF"/>
+        <Label Content="Edad" HorizontalAlignment="Left" Margin="471,170,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblEdad" Content="12" HorizontalAlignment="Left" Margin="533,170,0,0" VerticalAlignment="Top" Background="#FFF0F0F0" Width="193"/>
+        <Label Content="Sexo" HorizontalAlignment="Left" Margin="471,201,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSexo" Content="Hombre" HorizontalAlignment="Left" Margin="533,201,0,0" VerticalAlignment="Top" Background="#FFF0F0F0" Width="193"/>
         <Label x:Name="lblRegistrar" Content="Registrar nuevo empleado" HorizontalAlignment="Left" Margin="61,383,0,0" VerticalAlignment="Top" Background="White" Foreground="#FF00C5FF" MouseLeftButtonDown="lblRegistrar_MouseLeftButtonDown"/>
 
     </Grid>

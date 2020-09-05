@@ -74,6 +74,10 @@ namespace OnlyPans
             //Application.Current.MainWindow.Height = 100;
 
             lblAdmin.Visibility = Visibility.Hidden;
+            lblResumen.Visibility = Visibility.Hidden;
+            lblInventario.Visibility = Visibility.Hidden;
+            lblEmpleados.Visibility = Visibility.Hidden;
+            lblCerrar.Visibility = Visibility.Hidden;
 
             MainFrame.Content = P1;
 
@@ -138,6 +142,18 @@ namespace OnlyPans
         private void MainFrame_Navigated(object sender, NavigationEventArgs e)
         {
 
+        }
+
+        //cerrar sesión
+        private void lblAdmin_Copy_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            ADMIN = false;
+            lblAdmin.Visibility = Visibility.Hidden;
+            lblResumen.Visibility = Visibility.Hidden;
+            lblInventario.Visibility = Visibility.Hidden;
+            lblEmpleados.Visibility = Visibility.Hidden;
+            lblCerrar.Visibility = Visibility.Hidden;
+            MainFrame.Content = P1;
         }
     }
 }

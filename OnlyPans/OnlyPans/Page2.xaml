@@ -10,28 +10,29 @@
       Loaded="Window_Loaded">
 
     <Grid Background="White">
-        <Label Content="Ventas" HorizontalAlignment="Left" Margin="23,70,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="lbxVentas" HorizontalAlignment="Left" Height="275" Margin="23,96,0,0" VerticalAlignment="Top" Width="335" SelectionChanged="lbxVentas_SelectionChanged"/>
-        <Label Content="Info" HorizontalAlignment="Left" Margin="457,72,0,0" VerticalAlignment="Top"/>
-        <Label Content="Producto Vendido" HorizontalAlignment="Left" Margin="457,111,0,0" VerticalAlignment="Top"/>
-        <Label Content="Total" HorizontalAlignment="Left" Margin="457,235,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.496,1.44"/>
-        <Label x:Name="lblTotal" Content="2000$" HorizontalAlignment="Left" Margin="515,235,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblProducto" Content="Pan Alineaddso" HorizontalAlignment="Left" Margin="555,142,0,0" VerticalAlignment="Top" MouseLeftButtonDown="lblProducto_MouseLeftButtonDown"/>
-        <Label x:Name="lblPrecio" Content="1000$" HorizontalAlignment="Left" Margin="555,173,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblCantidad" Content="x3" HorizontalAlignment="Left" Margin="555,199,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.325,0.466"/>
-        <Label Content="Vendido por" HorizontalAlignment="Left" Margin="640,317,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblNombreEmpleado" Content="Lorem Ipsum" HorizontalAlignment="Left" Margin="640,345,0,0" VerticalAlignment="Top"/>
-        <Label Content="Empleado" HorizontalAlignment="Left" Margin="640,371,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.139,-0.391"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="76" Margin="457,142,0,0" Stroke="Black" VerticalAlignment="Top" Width="76"/>
-        <Label Content="Ganancias totales" HorizontalAlignment="Left" Margin="23,388,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblGanancias" Content="$$$" HorizontalAlignment="Left" Margin="143,388,0,0" VerticalAlignment="Top"/>
-        <Label Content="Comprador" HorizontalAlignment="Left" Margin="460,325,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblNombreCliente" Content="Lorem Ipsum" HorizontalAlignment="Left" Margin="460,353,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblCedulaCliente" Content="Cedula" HorizontalAlignment="Left" Margin="518,379,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.139,-0.391"/>
-        <Label Content="Cedula" HorizontalAlignment="Left" Margin="466,379,0,0" VerticalAlignment="Top"/>
-        <Label Content="Fecha" HorizontalAlignment="Left" Margin="466,280,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblFecha" Content="Fecha" HorizontalAlignment="Left" Margin="518,280,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnNuevaVenta" Content="Nueva Venta" HorizontalAlignment="Left" Margin="265,383,0,0" VerticalAlignment="Top" Width="75" Click="btnNuevaVenta_Click"/>
+        <Label Content="Ventas" HorizontalAlignment="Left" Margin="53,62,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <ListBox x:Name="lbxVentas" HorizontalAlignment="Left" Height="275" Margin="53,96,0,0" VerticalAlignment="Top" Width="335" SelectionChanged="lbxVentas_SelectionChanged"/>
+        <Label Content="Información" HorizontalAlignment="Left" Margin="435,62,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Producto Vendido" HorizontalAlignment="Left" Margin="435,101,0,0" VerticalAlignment="Top"/>
+        <Label Content="Total" HorizontalAlignment="Left" Margin="435,194,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.496,1.44"/>
+        <Label x:Name="lblTotal" Content="2000$" HorizontalAlignment="Left" Margin="546,196,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.786,0.5" Width="188" Foreground="Black" Background="#FFF0F0F0"/>
+        <Label x:Name="lblProducto" Content="Pan Alineaddso" HorizontalAlignment="Left" Margin="546,101,0,0" VerticalAlignment="Top" MouseLeftButtonDown="lblProducto_MouseLeftButtonDown" Width="188" Foreground="Black" Background="#FFF0F0F0"/>
+        <Label x:Name="lblPrecio" Content="1000$" HorizontalAlignment="Left" Margin="546,132,0,0" VerticalAlignment="Top" Width="188" Foreground="Black" Background="#FFF0F0F0"/>
+        <Label x:Name="lblCantidad" Content="x3" HorizontalAlignment="Left" Margin="546,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.325,0.466" Width="188" Foreground="Black" Background="#FFF0F0F0"/>
+        <Label Content="Vendedor" HorizontalAlignment="Left" Margin="602,266,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="lblNombreEmpleado" Content="Lorem Ipsum" HorizontalAlignment="Left" Margin="602,302,0,0" VerticalAlignment="Top" Width="132" Foreground="Black" Background="#FFF0F0F0"/>
+        <Label Content="Empleado" HorizontalAlignment="Left" Margin="602,333,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.139,-0.391" Width="80"/>
+        <Label Content="Ganancias totales" HorizontalAlignment="Left" Margin="53,379,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblGanancias" Content="$$$" HorizontalAlignment="Left" Margin="161,379,0,0" VerticalAlignment="Top" Width="137" Foreground="Black" Background="#FFF0F0F0"/>
+        <Label Content="Comprador" HorizontalAlignment="Left" Margin="438,266,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="lblNombreCliente" Content="Lorem Ipsum" HorizontalAlignment="Left" Margin="438,302,0,0" VerticalAlignment="Top" Width="131" Foreground="Black" Background="#FFF0F0F0"/>
+        <Label x:Name="lblCedulaCliente" Content="Cedula" HorizontalAlignment="Left" Margin="494,333,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.139,-0.391" Width="75" Foreground="Black" Background="#FFF0F0F0"/>
+        <Label Content="Cedula" HorizontalAlignment="Left" Margin="438,333,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fecha" HorizontalAlignment="Left" Margin="435,225,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblFecha" Content="Fecha" HorizontalAlignment="Left" Margin="546,227,0,0" VerticalAlignment="Top" Width="188" Foreground="Black" Background="#FFF0F0F0"/>
+        <Button x:Name="btnNuevaVenta" Content="Nueva Venta" HorizontalAlignment="Left" Margin="313,379,0,0" VerticalAlignment="Top" Width="75" Click="btnNuevaVenta_Click" RenderTransformOrigin="0.52,0.818"/>
+        <Label Content="Precio" HorizontalAlignment="Left" Margin="435,132,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cantidad" HorizontalAlignment="Left" Margin="435,163,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

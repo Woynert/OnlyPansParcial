@@ -5,18 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OnlyPans"
         mc:Ignorable="d"
-        Title="MainWindow" Height="619" Width="800">
-    <Grid Background="#FFE8E8E8">
+        Title="MainWindow" Height="561" Width="800">
+    <Grid Background="#FF5A669B">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="55*"/>
-            <ColumnDefinition Width="21*"/>
-            <ColumnDefinition Width="320*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Frame Name="MainFrame"  x:FieldModifier="public" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Width="792" Margin="0,58,0,0" Background="White" Grid.ColumnSpan="3" Navigated="MainFrame_Navigated"/>
-        <Label Content="Resumen" HorizontalAlignment="Left" Margin="2,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.923" Grid.ColumnSpan="2" Grid.Column="1" MouseLeftButtonDown="Label_MouseLeftButtonDown"/>
-        <Label x:Name="lblEmpleados" Content="Empleados" HorizontalAlignment="Left" Margin="207,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.923" Grid.Column="2" MouseLeftButtonDown="Label_MouseLeftButtonDown_1"/>
-        <Label Content="Inventario" HorizontalAlignment="Left" Margin="84,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.923" Grid.Column="2" MouseLeftButtonDown="Label_MouseLeftButtonDown_2"/>
-        <Label x:Name="lblAdmin" Content="Administrador" Grid.Column="2" HorizontalAlignment="Left" Margin="448,16,0,0" VerticalAlignment="Top"/>
+        <Frame Name="MainFrame"  x:FieldModifier="public" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Width="792" Margin="0,58,0,0" Background="White" Navigated="MainFrame_Navigated"/>
+        <Rectangle Fill="#FF434C74" HorizontalAlignment="Left" Height="58" Margin="362,0,0,0" VerticalAlignment="Top" Width="430"/>
+        <Label x:Name="lblResumen" Content="Resumen" HorizontalAlignment="Left" Margin="18,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.923" MouseLeftButtonDown="Label_MouseLeftButtonDown" FontSize="16" Foreground="White" Background="#FF434C74"/>
+        <Label x:Name="lblEmpleados" Content="Empleados" HorizontalAlignment="Left" Margin="242,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.923" MouseLeftButtonDown="Label_MouseLeftButtonDown_1" FontSize="16" Foreground="White" Background="#FF434C74"/>
+        <Label x:Name="lblInventario" Content="Inventario" HorizontalAlignment="Left" Margin="126,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.923" MouseLeftButtonDown="Label_MouseLeftButtonDown_2" FontSize="16" Foreground="White" Background="#FF434C74"/>
+        <Label x:Name="lblAdmin" Content="Administrador" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="379,16,0,0" VerticalAlignment="Top" Width="275" FontSize="16" Foreground="White" Background="#FF3B4368"/>
+        <Label x:Name="lblCerrar" Content="Cerrar Sesión" HorizontalAlignment="Left" Margin="669,16,0,0" VerticalAlignment="Top" MouseLeftButtonDown="lblAdmin_Copy_MouseLeftButtonDown" FontSize="16" Foreground="White" Background="#FF3B4368"/>
+
 
     </Grid>
 </Window>

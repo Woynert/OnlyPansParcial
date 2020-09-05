@@ -9,25 +9,27 @@
       Title="Page5">
 
     <Grid Background="White">
-        <Label Content="Registrar nuevo empleado" HorizontalAlignment="Left" Margin="64,90,0,0" VerticalAlignment="Top"/>
-        <Label Content="Nombre" HorizontalAlignment="Left" Margin="76,143,0,0" VerticalAlignment="Top"/>
-        <Label Content="Sexo" HorizontalAlignment="Left" Margin="81,217,0,0" VerticalAlignment="Top"/>
-        <Label Content="Edad" HorizontalAlignment="Left" Margin="80,252,0,0" VerticalAlignment="Top"/>
-        <Label Content="Cedula" HorizontalAlignment="Left" Margin="77,180,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="152,152,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtCedula" HorizontalAlignment="Left" Height="23" Margin="152,182,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="cbxSexo" HorizontalAlignment="Left" Margin="152,221,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0">
+        <Label Content="Registrar nuevo empleado" HorizontalAlignment="Left" Margin="81,65,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="81,150,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sexo" HorizontalAlignment="Left" Margin="81,222,0,0" VerticalAlignment="Top"/>
+        <Label Content="Edad" HorizontalAlignment="Left" Margin="81,259,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cedula" HorizontalAlignment="Left" Margin="81,185,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="152,152,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="202"/>
+        <TextBox x:Name="txtCedula" HorizontalAlignment="Left" Height="23" Margin="152,187,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="202"/>
+        <ComboBox x:Name="cbxSexo" HorizontalAlignment="Left" Margin="152,224,0,0" VerticalAlignment="Top" Width="202" SelectedIndex="0">
             <ComboBoxItem Content="Hombre"/>
             <ComboBoxItem Content="Mujer"/>
         </ComboBox>
-        <Slider x:Name="sldEdad" HorizontalAlignment="Left" Margin="152,256,0,0" Value="0" Maximum="80" IsSnapToTickEnabled="True" TickFrequency="1" VerticalAlignment="Top" Width="120" ValueChanged="sldEdad_ValueChanged"/>
-        <Label x:Name="lblEdad" Content="Edad" HorizontalAlignment="Left" Margin="277,252,0,0" VerticalAlignment="Top"/>
-        <Label Content="Email" HorizontalAlignment="Left" Margin="76,292,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="152,292,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="76,323,0,0" VerticalAlignment="Top"/>
-        <PasswordBox x:Name="txtPass" HorizontalAlignment="Left" Height="23" Margin="152,326,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="197,391,0,0" VerticalAlignment="Top" Width="75" Click="btnRegistrar_Click"/>
-        <CheckBox x:Name="cbxAdmin" Content="Usuario con privilegios de Administrador" HorizontalAlignment="Left" Margin="81,363,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+        <Slider x:Name="sldEdad" HorizontalAlignment="Left" Margin="152,263,0,0" Value="0" Maximum="80" IsSnapToTickEnabled="True" TickFrequency="1" VerticalAlignment="Top" Width="162" ValueChanged="sldEdad_ValueChanged"/>
+        <Label x:Name="lblEdad" Content="Edad" HorizontalAlignment="Left" Margin="319,259,0,0" VerticalAlignment="Top"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="418,150,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="494,153,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="201"/>
+        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="418,186,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="txtPass" HorizontalAlignment="Left" Height="23" Margin="494,189,0,0" VerticalAlignment="Top" Width="201"/>
+        <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="620,382,0,0" VerticalAlignment="Top" Width="75" Click="btnRegistrar_Click"/>
+        <CheckBox x:Name="cbxAdmin" Content="Usuario con privilegios de Administrador" HorizontalAlignment="Left" Margin="462,357,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" RenderTransformOrigin="0.464,0.875"/>
+        <Label Content="Información Personal" HorizontalAlignment="Left" Margin="81,116,0,0" VerticalAlignment="Top" FontSize="16" Background="White" Foreground="#FFCDCDCD"/>
+        <Label Content="Información de Ingreso" HorizontalAlignment="Left" Margin="418,117,0,0" VerticalAlignment="Top" FontSize="16" Background="White" Foreground="#FFCDCDCD"/>
 
     </Grid>
 </Page>

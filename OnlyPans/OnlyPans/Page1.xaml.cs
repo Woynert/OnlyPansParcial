@@ -28,6 +28,7 @@ namespace OnlyPans
         private void btnIngresar_Click(object sender, RoutedEventArgs e)
         {
             MainWindow w = (MainWindow)Window.GetWindow(this);
+            bool si = false;
             for (int i = 0; i < w.NEmpleados; i++)
             {
                 if ((txtUser.Text == w.Empleado[i, 4].ToString() || txtUser.Text == w.Empleado[i, 0].ToString()) && (txtPass.Password == w.Empleado[i, 5].ToString()))
@@ -39,16 +40,33 @@ namespace OnlyPans
                     {
                         w.ADMIN = true;
                         w.lblAdmin.Content = w.Empleado[i, 0].ToString() + " - Administrador";
+                        w.lblEmpleados.Visibility = Visibility.Visible;
                     }
                     else
                     {
                         w.lblEmpleados.Visibility = Visibility.Hidden;
                     }
-                    w.MainFrame.Content = w.P4;
+                    w.MainFrame.Content = w.P2;
+
+                    txtUser.Text = "";
 
                     w.lblAdmin.Visibility = Visibility.Visible;
+                    w.lblResumen.Visibility = Visibility.Visible;
+                    w.lblInventario.Visibility = Visibility.Visible;
+                    w.lblCerrar.Visibility = Visibility.Visible;
+
+                    si = true;
                 }
             }
+            if (si = false)
+            {
+                MessageBox.Show("Credenciales Incorrectas");
+            }
+        }
+
+        private void txtUser_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

@@ -32,6 +32,17 @@ namespace OnlyPans
             lbxVentas.Items.Clear();
             ShowContent();
             lbxVentas.SelectedIndex = 0;
+
+            MainWindow w = (MainWindow)Window.GetWindow(this);
+            if (w.ADMIN)
+            {
+                btnNuevaVenta.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                btnNuevaVenta.Visibility = Visibility.Visible;
+            }
+            ShowTotal();
         }
 
         private void ShowContent()
@@ -44,6 +55,7 @@ namespace OnlyPans
                 
             }
             lbxVentas.SelectedIndex = 0;
+            ShowTotal();
         }
         private void lbxVentas_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -72,6 +84,18 @@ namespace OnlyPans
         {
             MainWindow w = (MainWindow)Window.GetWindow(this);
             w.MainFrame.Content = w.P6;
+        }
+
+        private void ShowTotal()
+        {
+            MainWindow w = (MainWindow)Window.GetWindow(this);
+            int sum = 0;
+            for (int i = 0; i < w.NVentas; i++)
+            {
+                sum += Int32.Parse(w.Venta[i, 2].ToString());
+            }
+            //MessageBox.Show(sum.ToString());
+            lblGanancias.Content = sum.ToString() + "$";
         }
     }
 }

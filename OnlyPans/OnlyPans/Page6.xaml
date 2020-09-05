@@ -10,21 +10,22 @@
       Loaded="Window_Loaded">
 
     <Grid Background="White">
-        <Label Content="Registrar nueva venta" HorizontalAlignment="Left" Margin="39,64,0,0" VerticalAlignment="Top"/>
-        <Label Content="Nombre" HorizontalAlignment="Left" Margin="58,201,0,0" VerticalAlignment="Top"/>
-        <Label Content="Producto" HorizontalAlignment="Left" Margin="54,90,0,0" VerticalAlignment="Top"/>
-        <Label Content="Cantidad" HorizontalAlignment="Left" Margin="54,121,0,0" VerticalAlignment="Top"/>
-        <Label Content="Cedula" HorizontalAlignment="Left" Margin="65,228,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="127,201,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtCedula" HorizontalAlignment="Left" Height="23" Margin="127,231,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="cbxSexo" HorizontalAlignment="Left" Margin="125,94,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbxSexo_SelectionChanged" >
+        <Label Content="Registrar Nueva Venta" HorizontalAlignment="Left" Margin="73,81,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="433,175,0,0" VerticalAlignment="Top"/>
+        <Label Content="Producto" HorizontalAlignment="Left" Margin="73,175,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cantidad" HorizontalAlignment="Left" Margin="73,206,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cedula" HorizontalAlignment="Left" Margin="433,206,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="502,177,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="207"/>
+        <TextBox x:Name="txtCedula" HorizontalAlignment="Left" Height="23" Margin="502,208,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="207"/>
+        <ComboBox x:Name="cbxSexo" HorizontalAlignment="Left" Margin="137,179,0,0" VerticalAlignment="Top" Width="197" SelectionChanged="cbxSexo_SelectionChanged" >
         </ComboBox>
-        <Slider x:Name="sldEdad" HorizontalAlignment="Left" Margin="126,125,0,0" Value="0" Maximum="50" IsSnapToTickEnabled="True" TickFrequency="1" VerticalAlignment="Top" Width="120" ValueChanged="sldEdad_ValueChanged"/>
-        <Label x:Name="lblEdad" Content="Numero" HorizontalAlignment="Left" Margin="251,121,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="215,390,0,0" VerticalAlignment="Top" Width="75" Click="btnRegistrar_Click"/>
-        <Label Content="Información vendedor" HorizontalAlignment="Left" Margin="58,175,0,0" VerticalAlignment="Top"/>
-        <Label Content="Valor a cobrar" HorizontalAlignment="Left" Margin="60,291,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblValor" Content="2222" HorizontalAlignment="Left" Margin="149,291,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.75,0.072"/>
+        <Slider x:Name="sldEdad" HorizontalAlignment="Left" Margin="137,210,0,0" Value="0" Maximum="50" IsSnapToTickEnabled="True" TickFrequency="1" VerticalAlignment="Top" Width="155" ValueChanged="sldEdad_ValueChanged"/>
+        <Label x:Name="lblEdad" Content="Numero" HorizontalAlignment="Left" Margin="297,206,0,0" VerticalAlignment="Top" Width="37"/>
+        <Button x:Name="btnRegistrar" Content="Registrar" HorizontalAlignment="Left" Margin="631,382,0,0" VerticalAlignment="Top" Width="75" Click="btnRegistrar_Click"/>
+        <Label Content="Información del Comprador" HorizontalAlignment="Left" Margin="433,144,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFD4D4D4"/>
+        <Label Content="Valor A Cobrar" HorizontalAlignment="Left" Margin="386,378,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="lblValor" Content="2222" HorizontalAlignment="Left" Margin="492,372,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.75,0.072" FontSize="20" Background="#FFF1F1F1" Width="127"/>
+        <Label Content="Información del Producto" HorizontalAlignment="Left" Margin="73,144,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFD4D4D4"/>
 
     </Grid>
 </Page>
